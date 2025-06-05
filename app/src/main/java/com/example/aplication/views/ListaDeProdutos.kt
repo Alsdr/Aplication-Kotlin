@@ -28,7 +28,7 @@ fun ListaDeProduto(produtos: List<Produto>) {
         val maisCaro = produtos.filter { it.emPromocao }.maxByOrNull { it.preco }
 
         Text("Valor Total: R$%.2f".format(total), fontWeight = FontWeight.Bold)
-        Text("Valor da MÉDIA: R$.2f".format(media))
+        Text("Valor da MÉDIA: R$%.2f".format(media))
         Text("Produto mais caro: ${maisCaro?.nome}, ${maisCaro?.preco}")
     }
 }
@@ -44,4 +44,5 @@ val objetoFinal = gson.fromJson(testeJsonProduto, Produto::class.java)
 fun VerJson(){
     Text("${ objetoFinal } - ${objetoFinal.preco} - ${objetoFinal.emPromocao}")
 }
+
 
