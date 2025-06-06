@@ -1,4 +1,4 @@
-package com.example.test.views
+package com.example.aplication.views
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
