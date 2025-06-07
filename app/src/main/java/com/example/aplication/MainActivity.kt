@@ -59,3 +59,10 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     SwipePagerScreen(clients, products, employees, sales)
 }
 
+@Preview(showBackground = true)
+@Composable
+fun GreetingPreview() {
+    AplicationTheme {
+        Greeting("Android")
+    }
+}
