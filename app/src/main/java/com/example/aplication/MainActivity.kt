@@ -61,6 +61,14 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         employees = ApiService.getEmployees()
         sales = ApiService.getSales()
     }
+
     SwipePagerScreen(clients, products, employees, sales)
 }
 
+@Preview(showBackground = true)
+@Composable
+fun GreetingPreview() {
+    AplicationTheme {
+        Greeting("Android")
+    }
+}
